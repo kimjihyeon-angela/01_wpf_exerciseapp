@@ -1,0 +1,30 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.5.33516.290
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "ExerciseApp", "ExerciseApp", "{1E3FD612-19DD-4556-9BBD-F171ACE40849}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ExerciseApp", "ExerciseApp\ExerciseApp.csproj", "{BAAD8D7F-2BEE-4019-B44E-2952459635C1}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{BAAD8D7F-2BEE-4019-B44E-2952459635C1}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{BAAD8D7F-2BEE-4019-B44E-2952459635C1}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{BAAD8D7F-2BEE-4019-B44E-2952459635C1}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{BAAD8D7F-2BEE-4019-B44E-2952459635C1}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{BAAD8D7F-2BEE-4019-B44E-2952459635C1} = {1E3FD612-19DD-4556-9BBD-F171ACE40849}
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {0499676E-93FF-4BB7-83A3-8E2B9BA54BAD}
+	EndGlobalSection
+EndGlobal

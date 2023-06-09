@@ -13,14 +13,14 @@ using System.Windows.Media.Imaging;
 using System.Windows.Navigation;
 using System.Windows.Shapes;
 
-namespace _01_ExcerciseApp.Views
+namespace ExerciseApp.Views
 {
     /// <summary>
     /// DataBaseMonPage.xaml에 대한 상호 작용 논리
     /// </summary>
-    public partial class MainPage : Page
+    public partial class ExerciseRecord : UserControl
     {
-        public MainPage()
+        public ExerciseRecord()
         {
             InitializeComponent();
         }

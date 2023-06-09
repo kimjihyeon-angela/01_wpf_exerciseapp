@@ -8,7 +8,7 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-namespace _01_ExcerciseApp.Properties
+namespace ExerciseApp.Properties
 {
 
 
