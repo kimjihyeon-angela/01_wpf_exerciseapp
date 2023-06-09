@@ -39,7 +39,17 @@ WPF를 활용해서 운동 관련 앱 만들어보기 도전
 - 운동 -> 기록 화면 연동하기
   - 기록 화면 디자인 확인하면서 만들기
     - 난이도 설정부분 디자인 수정필요
-    - 
+    - statusbar 이름 변경 필요
+    <img src="https://raw.githubusercontent.com/kimjihyeon-angela/01_wpf_exerciseapp/main/images/record.png" width="700"/>
+    
+    <델파이로 만든 디자인 화면>
+    
+    <img src="https://raw.githubusercontent.com/kimjihyeon-angela/01_wpf_exerciseapp/main/images/new_record.png" width="700" />
+    
+    <wpf를 활용하여 만든 디자인화면>
+    
+    
+    
 - 솔루션 이름 바꾸기 하고 현재 파일이 열리지 않고 있음
   - 이에 대한 해결방법을 찾아야함 (찾지 못할 경우 다시 만들어야하는 불상사 발생,,!)
   - 경로가 잘못되었다는 오류였음
