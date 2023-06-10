@@ -37,9 +37,11 @@ WPF를 활용해서 운동 관련 앱 만들어보기 도전
 
 ## 03
 - 운동 -> 기록 화면 연동하기
+  - page로 만들 경우 화면이 뜨지 않았음 -> usercontrol 활용하니까 화면이 나왔음
+    - ActiveItem == ContentControl -> ContentControl에서 화면 띄우려면 usercontrol 필요 
   - 기록 화면 디자인 확인하면서 만들기
-    - 난이도 설정부분 디자인 수정필요
-    - statusbar 이름 변경 필요
+    - 난이도 설정부분 디자인 수정필요 (완료)
+    - statusbar 이름 변경 필요 (완료)
     <img src="https://raw.githubusercontent.com/kimjihyeon-angela/01_wpf_exerciseapp/main/images/record.png" width="700"/>
     
     <델파이로 만든 디자인 화면>
@@ -54,4 +56,5 @@ WPF를 활용해서 운동 관련 앱 만들어보기 도전
   - 이에 대한 해결방법을 찾아야함 (찾지 못할 경우 다시 만들어야하는 불상사 발생,,!)
   - 경로가 잘못되었다는 오류였음
     - 해당 파일속성에서 경로를 새로 설정해주면 되는 문제였다~
-- 
+- 전체기록 디자인 하기
+  - 기록 창에서 전체기록보기 클릭 시 전체기록 화면 뜨게 만들기
