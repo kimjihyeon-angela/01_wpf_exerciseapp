@@ -8,7 +8,7 @@
     xmlns:iconPacks="http://metro.mahapps.com/winfx/xaml/iconpacks"
     xmlns:local="clr-namespace:ExerciseApp"
     mc:Ignorable="d"
-    Title="Exercise App" Height="450" Width="800"
+    Title="Exercise App" Height="500" Width="900"
     WindowStartupLocation="CenterScreen" MinHeight="450" MinWidth="670"
     Loaded="MetroWindow_Loaded" Closing="MetroWindow_Closing">
 
@@ -99,24 +99,24 @@
                 </MenuItem>
             </Menu>
 
-            <ToolBarTray>
+            <!--<ToolBarTray>
                 <ToolBar Style="{StaticResource MahApps.Styles.ToolBar}">
                     <Button x:Name="BtnStartSubscribe" ToolTip="구독 시작" Click="MnuStartSubscribe_Click">
                         <iconPacks:PackIconMaterial Kind="MotionPlayOutline" />
                     </Button>
                     
-                    <!--
+                    --><!--
                     <Button x:Name="BtnStopSubscribe" ToolTip="구독 중지">
                         <iconPacks:PackIconMaterial Kind="CloseOctagonOutline" />
                     </Button>
-                    -->
+                    --><!--
                     
                     <Separator />
                     <Button x:Name="BtnExitProgram" ToolTip="프로그램 끝내기" Click="BtnExitProgram_Click">
                         <iconPacks:PackIconMaterial Kind="ExitRun" />
                     </Button>
                 </ToolBar>
-            </ToolBarTray>
+            </ToolBarTray>-->
         </StackPanel>
 
         
@@ -126,7 +126,7 @@
         </Grid>
 
         <StatusBar Grid.Row="2">
-            <StatusBarItem> SmartHome Solution </StatusBarItem>
+            <StatusBarItem> Exercise App </StatusBarItem>
             <Separator Style="{StaticResource MahApps.Styles.Separator.StatusBar}" />
             <StatusBarItem>선택화면 : </StatusBarItem>
             <StatusBarItem x:Name="StsSelScreen"></StatusBarItem>

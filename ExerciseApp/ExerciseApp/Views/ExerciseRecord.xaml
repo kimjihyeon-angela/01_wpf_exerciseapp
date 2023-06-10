@@ -10,13 +10,26 @@
 
     <Grid >
         <Grid.RowDefinitions>
-            <RowDefinition Height="40"/>
-            <RowDefinition Height="40"/>
+            <RowDefinition Height="35"/>
+            <RowDefinition Height="25"/>
             <RowDefinition Height="1.3*"/>
             <RowDefinition Height="1*"/>
         </Grid.RowDefinitions>
 
-        <Label Content="Record" FontSize="25" Grid.RowSpan="4" />
+        <Grid Grid.Row="0">
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="1*"/>
+                <ColumnDefinition Width="300"/>
+            </Grid.ColumnDefinitions>
+
+            <Label Grid.Column="0" Content="Record" FontSize="20"  Grid.Row="0"/>
+
+            <StackPanel Grid.Column="1" Orientation="Horizontal">
+                <DatePicker x:Name="DtpSelectDate" Margin="10,0" Width="180" VerticalAlignment="Center"/>
+                <Button x:Name="BtnSelectDate" Content="확인" Margin="3,0" />
+                <Button x:Name="BtnSelectAll" Content="전체조회" Margin="3,0"/>
+            </StackPanel>
+        </Grid>
 
         <Grid Grid.Row="1">
             <Grid.ColumnDefinitions>
@@ -24,15 +37,15 @@
                 <ColumnDefinition Width="3*"/>
             </Grid.ColumnDefinitions>
 
-            <StackPanel Grid.Column="0" VerticalAlignment="Center" Margin="5,0,0,5">
+            <StackPanel Grid.Column="0" VerticalAlignment="Center" Margin="5,0,0,0">
                 <Border BorderBrush="Black" BorderThickness="0,0,1,1">
-                    <Label Grid.Column="0" Content="Rxd" FontSize="15"  VerticalAlignment="Center" Margin="5" />
+                    <Label Grid.Column="0" Content="Rxd" FontSize="13"  VerticalAlignment="Center" Margin="5" />
                 </Border>
             </StackPanel>
 
-            <StackPanel Grid.Column="1" VerticalAlignment="Center" Margin="0,0,0,5">
-                <Border BorderBrush="Black" BorderThickness="1,0,0,1">
-                    <Label Grid.Column="1" Content="Scale" FontSize="15"  VerticalAlignment="Center" Margin="5"/>
+            <StackPanel Grid.Column="1" VerticalAlignment="Center" >
+                <Border BorderBrush="Black" BorderThickness="0,0,0,1">
+                    <Label Grid.Column="1" Content="Scale" FontSize="13"  VerticalAlignment="Center" Margin="5"/>
                 </Border>
             </StackPanel>
 
@@ -45,13 +58,13 @@
             </Grid.ColumnDefinitions>
 
             <StackPanel Grid.Column="0">
-                <Border BorderBrush="Black" BorderThickness="0,0,1,0">
+                <Border BorderBrush="Black" BorderThickness="0,1,1,0">
                     <DataGrid x:Name="DtgRxdWod" />
                 </Border>
             </StackPanel>
 
             <StackPanel Grid.Column="1">
-                <Border BorderBrush="Black" BorderThickness="1,0,0,0">
+                <Border BorderBrush="Black" BorderThickness="0,1,0,0">
                     <DataGrid x:Name="DtgScaledWod" />
                 </Border>
             </StackPanel>
@@ -60,9 +73,9 @@
 
         <Grid Grid.Row="3">
             <Grid.ColumnDefinitions>
-                <ColumnDefinition Width="200"/>
+                <ColumnDefinition Width="170"/>
                 <ColumnDefinition Width="1*"/>
-                <ColumnDefinition Width="200"/>
+                <ColumnDefinition Width="250"/>
             </Grid.ColumnDefinitions>
 
             <Grid Grid.Column="0">
@@ -83,6 +96,38 @@
                 <RadioButton Grid.Row="5" x:Name="RdbLevelAll" Content="All" />
             </Grid>
 
+            <Grid Grid.Column="1">
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="1*"/>
+                    <ColumnDefinition Width="2*"/>
+                </Grid.ColumnDefinitions>
+                
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="1*"/>
+                    <RowDefinition Height="1*"/>
+                    <RowDefinition Height="1*"/>
+                    <RowDefinition Height="1*"/>
+                </Grid.RowDefinitions>
+
+                <Label Grid.Row="0" Grid.Column="0" Content="이      름 : "  FontSize="15" Margin="0,0,5,0" HorizontalAlignment="Center" VerticalAlignment="Center"/>
+                <Label Grid.Row="1" Grid.Column="0" Content="전화번호 : "  FontSize="15" Margin="0,0,5,0" HorizontalAlignment="Center" VerticalAlignment="Center"/>
+                <Label Grid.Row="2" Grid.Column="0" Content="생년월일 : "  FontSize="15" Margin="0,0,5,0" HorizontalAlignment="Center" VerticalAlignment="Center"/>
+                <Label Grid.Row="3" Grid.Column="0" Content="성      별 : "  FontSize="15" Margin="0,0,5,0" HorizontalAlignment="Center" VerticalAlignment="Center"/>
+
+                <TextBlock Grid.Row="0" Grid.Column="1" x:Name="TxtName" Text="이름" FontSize="15"
+                     VerticalAlignment="Center" HorizontalAlignment="Left" Margin="10,0,0,0"/>
+                <TextBlock Grid.Row="1" Grid.Column="1" x:Name="TxtPhoneNum" Text="전화번호" FontSize="15"
+                     VerticalAlignment="Center" HorizontalAlignment="Left" Margin="10,0,0,0"/>
+                <TextBlock Grid.Row="2" Grid.Column="1" x:Name="TxtBirthYear" Text="생년월일" FontSize="15"
+                     VerticalAlignment="Center" HorizontalAlignment="Left" Margin="10,0,0,0"/>
+                <TextBlock Grid.Row="3" Grid.Column="1" x:Name="TxtGender" Text="성별" FontSize="15"
+                     VerticalAlignment="Center" HorizontalAlignment="Left" Margin="10,0,0,0"/>
+            </Grid>
+
+            <StackPanel Grid.Column="2" Orientation="Horizontal" Margin="5,50">
+                <TextBox x:Name="TxtRecord" Text="기록" Width="180" VerticalAlignment="Center"/>
+                <Button x:Name="BtnRecord" Content="입력하기" Margin="5,0,0,0"/>
+            </StackPanel>
         </Grid>
     </Grid>
 </UserControl>

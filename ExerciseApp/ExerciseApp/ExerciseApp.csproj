@@ -240,6 +240,9 @@
     <Compile Include="Views\DataBaseControl.xaml.cs">
       <DependentUpon>DataBaseControl.xaml</DependentUpon>
     </Compile>
+    <Compile Include="Views\ExerciseRecordTotal.xaml.cs">
+      <DependentUpon>ExerciseRecordTotal.xaml</DependentUpon>
+    </Compile>
     <Compile Include="Views\ExerciseRecord.xaml.cs">
       <DependentUpon>ExerciseRecord.xaml</DependentUpon>
     </Compile>
@@ -271,6 +274,10 @@
     <Page Include="Views\DataBaseControl.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Views\ExerciseRecordTotal.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
     </Page>
     <Page Include="Views\ExerciseRecord.xaml">
       <SubType>Designer</SubType>
