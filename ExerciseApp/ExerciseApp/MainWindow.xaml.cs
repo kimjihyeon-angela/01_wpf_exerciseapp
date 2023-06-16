@@ -100,15 +100,23 @@ namespace ExerciseApp
 
         private void MnuWeight_Click(object sender, RoutedEventArgs e)
         {
-
+            var weight = new Views.Weight();
+            ActiveItem.Content = weight;
+            StsSelScreen.Content = "Weight";
         }
 
         private void MnuExerciseRecord_Click(object sender, RoutedEventArgs e)
         {
             var record = new Views.ExerciseRecord();
             ActiveItem.Content = record;
-            //StsSelScreen.Content = typeof(Views.DataBaseControl);
             StsSelScreen.Content = "Record";
+        }
+
+        private void MnuExerciseRecordTotal_Click(object sender, RoutedEventArgs e)
+        {
+            var recordTotal = new Views.ExerciseRecordTotal();
+            ActiveItem.Content = recordTotal;
+            StsSelScreen.Content = "TotalRecord";
         }
     }
 }

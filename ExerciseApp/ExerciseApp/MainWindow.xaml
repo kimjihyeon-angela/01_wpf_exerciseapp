@@ -35,12 +35,6 @@
                         <iconPacks:PackIconUnicons Kind="FileEditAlt" />
                     </MenuItem.Icon>
 
-                    <MenuItem x:Name="MnuExerciseRecord" Header="기록" Click="MnuExerciseRecord_Click">
-                        <MenuItem.Icon>
-                            <iconPacks:PackIconMaterial Kind="MotionPlayOutline" />
-                        </MenuItem.Icon>
-                    </MenuItem>
-
                     <MenuItem x:Name="MnuExerciseDay" Header="내역" Click="MnuStartSubscribe_Click">
                         <MenuItem.Icon>
                             <iconPacks:PackIconMaterial Kind="MotionPlayOutline" />
@@ -58,6 +52,24 @@
                     <MenuItem x:Name="MnuExitProgram" Header="종료" Click="MnuExitSubscribe_Click">
                         <MenuItem.Icon>
                             <iconPacks:PackIconMaterial Kind="ExitRun" />
+                        </MenuItem.Icon>
+                    </MenuItem>
+                </MenuItem>
+
+                <MenuItem Header="기록">
+                    <MenuItem.Icon>
+                        <iconPacks:PackIconUnicons Kind="FileEditAlt" />
+                    </MenuItem.Icon>
+                    
+                    <MenuItem x:Name="MnuExerciseRecord" Header="입력하기" Click="MnuExerciseRecord_Click">
+                        <MenuItem.Icon>
+                            <iconPacks:PackIconVaadinIcons Kind="Desktop" />
+                        </MenuItem.Icon>
+                    </MenuItem>
+
+                    <MenuItem x:Name="MnuExerciseRecordTotal" Header="조회하기" Click="MnuExerciseRecordTotal_Click">
+                        <MenuItem.Icon>
+                            <iconPacks:PackIconVaadinIcons Kind="Desktop" />
                         </MenuItem.Icon>
                     </MenuItem>
                 </MenuItem>

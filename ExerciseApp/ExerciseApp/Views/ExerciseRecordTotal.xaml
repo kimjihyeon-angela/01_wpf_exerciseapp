@@ -11,8 +11,7 @@
     <Grid >
         <Grid.RowDefinitions>
             <RowDefinition Height="35"/>
-            <RowDefinition Height="25"/>
-            <RowDefinition Height="1.3*"/>
+            <RowDefinition Height="30"/>
             <RowDefinition Height="1*"/>
         </Grid.RowDefinitions>
 
@@ -22,17 +21,43 @@
                 <ColumnDefinition Width="300"/>
             </Grid.ColumnDefinitions>
 
-            <Label Grid.Column="0" Content="Record" FontSize="20"  Grid.Row="0"/>
-
-            
+            <Label Grid.Column="0" Content="Record Total" FontSize="20"  Grid.Row="0"/>
         </Grid>
+        
         <Grid Grid.Row="1">
             <Grid.ColumnDefinitions>
                 <ColumnDefinition Width="1*"/>
                 <ColumnDefinition Width="auto"/>
             </Grid.ColumnDefinitions>
 
-            <StackPanel Grid.Row="1" Orientation="Horizontal">
+            <Grid Grid.Row="1">
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="80"/>
+                    <ColumnDefinition Width="80"/>
+                    <ColumnDefinition Width="180"/>
+                    <ColumnDefinition Width="1*"/>
+                    <ColumnDefinition Width="115"/>
+                </Grid.ColumnDefinitions>
+
+                <ComboBox Grid.Column="0">
+                    
+                </ComboBox>
+
+                <ComboBox Grid.Column="1">
+
+                </ComboBox>
+
+                <DatePicker Grid.Column="2">
+                    
+                </DatePicker>
+
+                <StackPanel Grid.Column="4" Orientation="Horizontal" Margin="5,0">
+                    <Button x:Name="BtnSelectAll" Content="전체보기" />
+                    <Button x:Name="BtnSelect" Content="조회하기" />
+                </StackPanel>
+
+            </Grid>
+            <!--<StackPanel Grid.Row="1" Orientation="Horizontal">
                 <ComboBox x:Name="Cbogender" Text="성별 기준">
 
                 </ComboBox>
@@ -46,9 +71,10 @@
             <StackPanel Grid.Column="1" Orientation="Horizontal">
                 <Button x:Name="BtnSelectAll" Content="전체보기" />
                 <Button x:Name="BtnSelect" Content="조회하기" />
-            </StackPanel>
+            </StackPanel>-->
         </Grid>
-        
+
+        <DataGrid Grid.Row="2"></DataGrid>
 
     </Grid>
 </UserControl>
