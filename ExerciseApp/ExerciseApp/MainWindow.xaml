@@ -32,18 +32,18 @@
             <Menu IsMainMenu="True" Style="{StaticResource MahApps.Styles.Menu}">
                 <MenuItem Header="운동">
                     <MenuItem.Icon>
-                        <iconPacks:PackIconUnicons Kind="FileEditAlt" />
+                        <iconPacks:PackIconFontAwesome Kind="DumbbellSolid" />
                     </MenuItem.Icon>
 
                     <MenuItem x:Name="MnuExerciseDay" Header="내역" Click="MnuStartSubscribe_Click">
                         <MenuItem.Icon>
-                            <iconPacks:PackIconMaterial Kind="MotionPlayOutline" />
+                            <iconPacks:PackIconModern Kind="CalendarMonth" />
                         </MenuItem.Icon>
                     </MenuItem>
 
                     <MenuItem x:Name="MnuExerciseInfo" Header="설명" Click="MnuStartSubscribe_Click">
                         <MenuItem.Icon>
-                            <iconPacks:PackIconMaterial Kind="MotionPlayOutline" />
+                            <iconPacks:PackIconMaterial Kind="MovieOpenPlay" />
                         </MenuItem.Icon>
                     </MenuItem>
                     
@@ -58,55 +58,55 @@
 
                 <MenuItem Header="기록">
                     <MenuItem.Icon>
-                        <iconPacks:PackIconUnicons Kind="FileEditAlt" />
+                        <iconPacks:PackIconFontAwesome Kind="ClipboardRegular" />
                     </MenuItem.Icon>
                     
                     <MenuItem x:Name="MnuExerciseRecord" Header="입력하기" Click="MnuExerciseRecord_Click">
                         <MenuItem.Icon>
-                            <iconPacks:PackIconVaadinIcons Kind="Desktop" />
+                            <iconPacks:PackIconVaadinIcons Kind="Notebook" />
                         </MenuItem.Icon>
                     </MenuItem>
 
                     <MenuItem x:Name="MnuExerciseRecordTotal" Header="조회하기" Click="MnuExerciseRecordTotal_Click">
                         <MenuItem.Icon>
-                            <iconPacks:PackIconVaadinIcons Kind="Desktop" />
+                            <iconPacks:PackIconModern Kind="TimerRecord" />
                         </MenuItem.Icon>
                     </MenuItem>
                 </MenuItem>
 
                 <MenuItem x:Name="MnuWeight" Header="무게" Click="MnuWeight_Click">
                     <MenuItem.Icon>
-                        <iconPacks:PackIconVaadinIcons Kind="Desktop" />
+                        <iconPacks:PackIconMaterial Kind="WeightLifter" />
                     </MenuItem.Icon>
                 </MenuItem>
 
                 <MenuItem Header="대회">
                     <MenuItem.Icon>
-                        <iconPacks:PackIconVaadinIcons Kind="Desktop" />
+                        <iconPacks:PackIconBoxIcons Kind="SolidTrophy" />
                     </MenuItem.Icon>
 
                     <MenuItem x:Name="MnuCompetitionMake" Header="만들기">
                         <MenuItem.Icon>
-                            <iconPacks:PackIconUnicons Kind="CloudDatabaseTree" />
+                            <iconPacks:PackIconUnicons Kind="EditAlt" />
                         </MenuItem.Icon>
                     </MenuItem>
 
                     <MenuItem x:Name="MnuCompetitionInfo" Header="정보">
                         <MenuItem.Icon>
-                            <iconPacks:PackIconVaadinIcons Kind="SplineChart" />
+                            <iconPacks:PackIconJamIcons Kind="Clipboard" />
                         </MenuItem.Icon>
                     </MenuItem>
 
                     <MenuItem x:Name="MnuCompetitionRecord" Header="기록">
                         <MenuItem.Icon>
-                            <iconPacks:PackIconUnicons Kind="TachometerFastAlt" />
+                            <iconPacks:PackIconModern Kind="TimerRecord" />
                         </MenuItem.Icon>
                     </MenuItem>
                 </MenuItem>
 
                 <MenuItem x:Name="MnuCommunity" Header="커뮤니티">
                     <MenuItem.Icon>
-                        <iconPacks:PackIconVaadinIcons Kind="Desktop" />
+                        <iconPacks:PackIconUnicons Kind="CommentChartLine" />
                     </MenuItem.Icon>
                 </MenuItem>
             </Menu>
