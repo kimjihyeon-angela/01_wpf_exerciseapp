@@ -75,19 +75,6 @@ namespace ExerciseApp
 
             var result = await this.ShowMessageAsync("프로그램을 종료","프로그램을 종료하시겠습니까?",
                                                      MessageDialogStyle.AffirmativeAndNegative, mySettings);
-
-            if (result == MessageDialogResult.Negative)
-            {
-                e.Cancel = true;
-            }
-            else if (result == MessageDialogResult.Affirmative)
-            {
-                if (Commons.MQTT_CLIENT.IsConnected)
-                {
-                    Commons.MQTT_CLIENT.Disconnect();
-                }
-                Process.GetCurrentProcess().Kill(); // 가장 확실한 끝내기 방법
-            }
         }
 
         #region < 메뉴버튼 클릭 시 창 이동 이벤트 >

@@ -35,7 +35,8 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <PropertyGroup>
-    <ApplicationIcon>smarthome.ico</ApplicationIcon>
+    <ApplicationIcon>
+    </ApplicationIcon>
   </PropertyGroup>
   <ItemGroup>
     <Reference Include="BouncyCastle.Crypto, Version=1.9.0.0, Culture=neutral, PublicKeyToken=0e99375e54769942, processorArchitecture=MSIL">
@@ -240,13 +241,13 @@
     <Compile Include="Views\DataBaseControl.xaml.cs">
       <DependentUpon>DataBaseControl.xaml</DependentUpon>
     </Compile>
-    <Compile Include="Views\Weight.xaml.cs">
+    <Compile Include="Views\weight\Weight.xaml.cs">
       <DependentUpon>Weight.xaml</DependentUpon>
     </Compile>
-    <Compile Include="Views\ExerciseRecordTotal.xaml.cs">
+    <Compile Include="Views\record\ExerciseRecordTotal.xaml.cs">
       <DependentUpon>ExerciseRecordTotal.xaml</DependentUpon>
     </Compile>
-    <Compile Include="Views\ExerciseRecord.xaml.cs">
+    <Compile Include="Views\record\ExerciseRecord.xaml.cs">
       <DependentUpon>ExerciseRecord.xaml</DependentUpon>
     </Compile>
     <Compile Include="Views\MqttPopupWindow.xaml.cs">
@@ -278,15 +279,15 @@
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
-    <Page Include="Views\Weight.xaml">
+    <Page Include="Views\weight\Weight.xaml">
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
     </Page>
-    <Page Include="Views\ExerciseRecordTotal.xaml">
+    <Page Include="Views\record\ExerciseRecordTotal.xaml">
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
     </Page>
-    <Page Include="Views\ExerciseRecord.xaml">
+    <Page Include="Views\record\ExerciseRecord.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
@@ -329,9 +330,6 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
-  </ItemGroup>
-  <ItemGroup>
-    <Resource Include="smarthome.ico" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
