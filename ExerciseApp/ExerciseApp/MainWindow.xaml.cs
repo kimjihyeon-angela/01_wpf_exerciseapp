@@ -75,6 +75,7 @@ namespace ExerciseApp
 
             var result = await this.ShowMessageAsync("프로그램을 종료","프로그램을 종료하시겠습니까?",
                                                      MessageDialogStyle.AffirmativeAndNegative, mySettings);
+            Process.GetCurrentProcess().Kill();
         }
 
         #region < 메뉴버튼 클릭 시 창 이동 이벤트 >
