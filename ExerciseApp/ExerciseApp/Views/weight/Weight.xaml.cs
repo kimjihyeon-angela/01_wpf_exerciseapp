@@ -18,9 +18,9 @@ namespace ExerciseApp.Views
 
         private async void BtnCalculate_Click(object sender, RoutedEventArgs e)
         {
-            
-            //var kg = RbtKg.IsChecked.Value;
-            //var lbs = RbtLbs.IsChecked.Value;
+
+            var kg = RbtKg.IsChecked.Value;
+            var lbs = RbtLbs.IsChecked.Value;
             var male = RbtMale.IsChecked.Value;
             var female = RbtFemale.IsChecked.Value;
 
@@ -31,8 +31,8 @@ namespace ExerciseApp.Views
                 return;
             }
             // 무게값 입력, 무게기준 혹은 성별 선택안했을 경우
-            else if(((male == false) && (female == false)))
-                // ((lbs == false) && (kg == false)) ||
+            else if(((lbs == false) && (kg == false)) || ((male == false) && (female == false)))
+                
             {
                 await Commons.ShowCustomMessageAsync("주의", "무게기준 혹은 성별을 입력하세요");
                 return;
