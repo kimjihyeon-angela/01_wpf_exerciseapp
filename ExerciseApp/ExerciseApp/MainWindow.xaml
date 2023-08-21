@@ -35,13 +35,13 @@
                         <iconPacks:PackIconFontAwesome Kind="DumbbellSolid" />
                     </MenuItem.Icon>
 
-                    <MenuItem x:Name="MnuExerciseDay" Header="내역" Click="MnuStartSubscribe_Click">
+                    <MenuItem x:Name="MnuExerciseDay" Header="내역">
                         <MenuItem.Icon>
                             <iconPacks:PackIconModern Kind="CalendarMonth" />
                         </MenuItem.Icon>
                     </MenuItem>
 
-                    <MenuItem x:Name="MnuExerciseInfo" Header="설명" Click="MnuStartSubscribe_Click">
+                    <MenuItem x:Name="MnuExerciseInfo" Header="설명">
                         <MenuItem.Icon>
                             <iconPacks:PackIconMaterial Kind="MovieOpenPlay" />
                         </MenuItem.Icon>
