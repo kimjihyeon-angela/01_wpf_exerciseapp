@@ -1,0 +1,31 @@
+﻿<Page x:Class="ExerciseApp.Views.Exercise.Explain"
+      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+      xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+      xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+      xmlns:local="clr-namespace:ExerciseApp.Views.Exercise"
+      mc:Ignorable="d" 
+      d:DesignHeight="450" d:DesignWidth="800"
+      Title="Explain">
+
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="35"/>
+            <RowDefinition Height="35"/>
+            <RowDefinition Height="386*"/>
+        </Grid.RowDefinitions>
+
+        <Label Grid.Row="0" Content="Explain" FontSize="20" />
+
+        <Grid Grid.Row="1">
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="3*"/>
+                <ColumnDefinition Width="1*"/>
+            </Grid.ColumnDefinitions>
+
+            <TextBox Grid.Column="0" Text="운동명을 입력하세요" Margin="5,3" />
+            <Button Grid.Column="1" Content="검색" Margin="5,3" />
+
+        </Grid>
+    </Grid>
+</Page>

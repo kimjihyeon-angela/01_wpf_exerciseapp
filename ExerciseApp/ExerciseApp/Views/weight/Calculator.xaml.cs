@@ -1,11 +1,12 @@
 ﻿using MahApps.Metro.Controls;
+using System.Diagnostics;
 using System.Web.UI.WebControls;
 using System.Windows;
 
 namespace ExerciseApp.Views
 {
     /// <summary>
-    /// MqttPopupWindow.xaml에 대한 상호 작용 논리
+    /// ExerciseApp.xaml에 대한 상호 작용 논리
     /// </summary>
     public partial class Calculator2 : MetroWindow
     {
