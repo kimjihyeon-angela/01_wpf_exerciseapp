@@ -41,7 +41,7 @@
                         </MenuItem.Icon>
                     </MenuItem>
 
-                    <MenuItem x:Name="MnuExerciseInfo" Header="설명">
+                    <MenuItem x:Name="MnuExerciseInfo" Header="설명" Click="MnuExerciseInfo_Click">
                         <MenuItem.Icon>
                             <iconPacks:PackIconMaterial Kind="MovieOpenPlay" />
                         </MenuItem.Icon>

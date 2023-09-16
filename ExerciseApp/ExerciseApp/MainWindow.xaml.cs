@@ -62,7 +62,7 @@ namespace ExerciseApp
             Process.GetCurrentProcess().Kill();
         }
 
-        #region < 메뉴버튼 클릭 시 창 이동 이벤트 >
+        #region < 메트로윈도우 화면 닫을 때 이벤트 >
         private void BtnExitProgram_Click(object sender, RoutedEventArgs e)
         {
             // 메트로윈도우 화면 닫을 때 이벤트 핸들러 호출
@@ -70,25 +70,40 @@ namespace ExerciseApp
         }
         #endregion
 
+        #region < 무게 메뉴 클릭 시 창 이동 이벤트 >
         private void MnuWeight_Click(object sender, RoutedEventArgs e)
         {
             var weight = new Views.Weight();
             ActiveItem.Content = weight;
             StsSelScreen.Content = "Weight";
         }
+        #endregion
 
+        #region < 기록입력 메뉴 클릭 시 창 이동 이벤트 >
         private void MnuExerciseRecord_Click(object sender, RoutedEventArgs e)
         {
             var record = new Views.ExerciseRecord();
             ActiveItem.Content = record;
             StsSelScreen.Content = "Record";
         }
+        #endregion
 
+        #region < 기록조회 메뉴 클릭 시 창 이동 이벤트 >
         private void MnuExerciseRecordTotal_Click(object sender, RoutedEventArgs e)
         {
             var recordTotal = new Views.ExerciseRecordTotal();
             ActiveItem.Content = recordTotal;
             StsSelScreen.Content = "TotalRecord";
         }
+        #endregion
+
+        #region < 설명 메뉴 클릭 시 창 이동 이벤트 >
+        private void MnuExerciseInfo_Click(object sender, RoutedEventArgs e)
+        {
+            var exerciseInfo = new Views.Exercise.Explain();
+            ActiveItem.Content = exerciseInfo;
+            StsSelScreen.Content = "Explain";
+        }
+        #endregion
     }
 }
