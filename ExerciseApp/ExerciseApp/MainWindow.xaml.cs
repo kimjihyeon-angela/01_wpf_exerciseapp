@@ -105,5 +105,14 @@ namespace ExerciseApp
             StsSelScreen.Content = "Explain";
         }
         #endregion
+
+        #region < 대회 만들기 클릭 시 창 이동 이벤트 >
+        private void MnuCompetitionMake_Click(object sender, RoutedEventArgs e)
+        {
+            var makeCompetition = new Views.Competition.MakeCompetition();
+            ActiveItem.Content = makeCompetition;
+            StsSelScreen.Content = "Make Competition";
+        }
+        #endregion
     }
 }

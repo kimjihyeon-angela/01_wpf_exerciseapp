@@ -85,7 +85,7 @@
                         <iconPacks:PackIconBoxIcons Kind="SolidTrophy" />
                     </MenuItem.Icon>
 
-                    <MenuItem x:Name="MnuCompetitionMake" Header="만들기">
+                    <MenuItem x:Name="MnuCompetitionMake" Header="만들기" Click="MnuCompetitionMake_Click">
                         <MenuItem.Icon>
                             <iconPacks:PackIconUnicons Kind="EditAlt" />
                         </MenuItem.Icon>
