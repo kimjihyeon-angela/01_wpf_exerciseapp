@@ -116,4 +116,4 @@ WPF를 활용해서 운동 관련 앱 만들어보기 도전
     - LostFocus
       - TextBlock.Visibility = Visibility.Hidden 해주기
     - GotFoucus
-        -textbox의 텍스트가 빈값일 경우 TextBlock.visibility = Visibility.Visible 해주기
+      - textbox의 텍스트가 빈값일 경우 TextBlock.visibility = Visibility.Visible 해주기
