@@ -98,3 +98,22 @@ WPF를 활용해서 운동 관련 앱 만들어보기 도전
     - 해야 할 일
       - 원인 찾아보기
       - 우선 화면 부터 열리게 해보기
+
+## 08
+- 대회만들기 화면 디자인
+  - 대회정보 입력 완료 후 확인 버튼 클릭 시 대회 참가자 정보 입력할 수 있는 화면 나옴
+  - mah에서는 watermark 기능이 있으나 mah를 사용하면 usercontrol 사용 불가, contentcontrol에서 사용이 불가함
+  - watermark 기능을 활용하기 위해 방법을 찾아야 했음
+    - textbox와 textblock을 동시에 사용하는 방법이었음
+    - 기본 설정
+      - textbox background={x:null}
+      - textblock Text="원하는 문구", Foreground = "Gray"(watermark 느낌 내기 위함)
+    - textbox
+      - TextChanged, LostFocus, GotFocus 이벤트 넣기
+    - TextChanged
+      - textbox의 텍스트가 빈값일 경우 TextBlock.visibility = Visibility.Visible 해주기
+      - 아닐경우 TextBlock.Visibility = Visibility.Hidden 해주기
+    - LostFocus
+      - TextBlock.Visibility = Visibility.Hidden 해주기
+    - GotFoucus
+        -textbox의 텍스트가 빈값일 경우 TextBlock.visibility = Visibility.Visible 해주기
