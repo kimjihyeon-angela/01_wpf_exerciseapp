@@ -46,7 +46,7 @@
 
                 <Grid Grid.Row="1" Grid.Column="1" Margin="5" Height="40">
                     <TextBlock x:Name="tbkCompetitionName" Text="대회명을 입력하세요" Foreground="Gray" Margin="5,0"></TextBlock>
-                    <TextBox Grid.Row="1" Grid.Column="1" x:Name="tbxCompetitionName" Background="{x:Null}" 
+                    <TextBox Grid.Row="1" Grid.Column="1" x:Name="tbxCompetitionName" Background="{x:Null}" Text="{Binding InCompetitionName}" 
                 BorderThickness="0" Margin="5, 0"
                 TextChanged="tbxCompetitionName_TextChanged" GotFocus="tbxCompetitionName_GotFocus" LostFocus="tbxCompetitionName_LostFocus"/>
                 </Grid>
@@ -84,7 +84,7 @@
                 <Label Grid.Row="3" Grid.Column="0" Content="생년월일 :" VerticalAlignment="Center" HorizontalAlignment="Right" FontSize="15" Margin="0,12,1,10" Height="30" Width="90"/>
                 <Label Grid.Row="4" Grid.Column="0" Content="전화번호 :" VerticalAlignment="Center" HorizontalAlignment="Right" FontSize="15" Margin="0,10" Height="30" Width="90"/>
 
-                <TextBlock Grid.Row="1" Grid.Column="1" Text="대회명" VerticalAlignment="Center" FontSize="15" Margin="5"/>
+                <TextBlock Grid.Row="1" Grid.Column="1" Text="{Binding OutCompetitionName}" VerticalAlignment="Center" FontSize="15" Margin="5"/>
                 <!--대회정보 대회명과 바인딩 시키기-->
                 <Grid Grid.Row="2" Grid.Column="1" Margin="5,10" Height="50">
                     <TextBlock x:Name="tbkName" Text="이름을 입력하세요" Foreground="Gray" Margin="5,0"></TextBlock>
@@ -105,7 +105,7 @@
 
                 <StackPanel Grid.Row="6" Grid.ColumnSpan="2" Margin="10" Orientation="Horizontal" HorizontalAlignment="Center">
                     <Button x:Name="btnCheck2" Content="확인" Click="btnCheck_Click" Width="50" Margin="0,0,20,0"/>
-                    <Button x:Name="btnCancel2" Content="취소" Click="btnCancel_Click" Background="DarkSalmon" Width="50" Height="30" VerticalAlignment="Top" />
+                    <Button x:Name="btnCancel2" Content="취소" Click="btnCancel2_Click" Background="DarkSalmon" Width="50" Height="30" VerticalAlignment="Top" />
                 </StackPanel>
             </Grid>
 

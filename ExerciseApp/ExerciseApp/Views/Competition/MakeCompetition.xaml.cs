@@ -114,5 +114,10 @@ namespace ExerciseApp.Views.Competition
                 tbkPhoneNum.Visibility = Visibility.Visible;
             }
         }
+
+        private void btnCancel2_Click(object sender, RoutedEventArgs e)
+        {
+            InfoGrid.Visibility = Visibility.Hidden;
+        }
     }
 }
