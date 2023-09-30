@@ -255,6 +255,12 @@
     <Compile Include="Views\About.xaml.cs">
       <DependentUpon>About.xaml</DependentUpon>
     </Compile>
+    <Compile Include="Views\Competition\CompetitionInfo.xaml.cs">
+      <DependentUpon>CompetitionInfo.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Views\Competition\CompetitionRecord.xaml.cs">
+      <DependentUpon>CompetitionRecord.xaml</DependentUpon>
+    </Compile>
     <Compile Include="Views\Competition\MakeCompetition.xaml.cs">
       <DependentUpon>MakeCompetition.xaml</DependentUpon>
     </Compile>
@@ -289,6 +295,14 @@
       <SubType>Code</SubType>
     </Compile>
     <Page Include="Views\About.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Views\Competition\CompetitionInfo.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Views\Competition\CompetitionRecord.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>

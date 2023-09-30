@@ -114,5 +114,21 @@ namespace ExerciseApp
             StsSelScreen.Content = "Make Competition";
         }
         #endregion
+
+        #region < 대회 정보 클릭 시 창 이동 이벤트 >
+        private void MnuCompetitionInfo_Click(object sender, RoutedEventArgs e)
+        {
+            var competitionInfo = new Views.Competition.CompetitionInfo();
+            ActiveItem.Content = competitionInfo;
+            StsSelScreen.Content = "Competition Info";
+        }
+        #endregion
+
+        private void MnuCompetitionRecord_Click(object sender, RoutedEventArgs e)
+        {
+            var competitionRecord = new Views.Competition.CompetitionRecord();
+            ActiveItem.Content = competitionRecord;
+            StsSelScreen.Content = "Competition Record";
+        }
     }
 }
