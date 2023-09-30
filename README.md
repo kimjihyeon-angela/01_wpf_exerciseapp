@@ -117,3 +117,21 @@ WPF를 활용해서 운동 관련 앱 만들어보기 도전
       - TextBlock.Visibility = Visibility.Hidden 해주기
     - GotFoucus
       - textbox의 텍스트가 빈값일 경우 TextBlock.visibility = Visibility.Visible 해주기
+     
+<img src="https://raw.githubusercontent.com/kimjihyeon-angela/01_wpf_exerciseapp/main/images/MakeCompetition.png" width="700" />
+
+<대회 만들기 화면>
+
+## 09
+- 대회 정보화면 디자인
+  - 대회명 입력하기, 시작날짜, 종료날짜 선택하게 만듦
+- 해야할 일
+  - db 연동하여 조회하기 클릭 시 해당 대회 정보(대회명, 시작날짜, 종료날짜 중 정보 한 개라도 일치할 경우 다 나오게 만들기)
+  - 조회하기 클릭 했을 때 정보가 아무것도 입력되어 있지 않을 경우 모든 대회 조회
+  - 조회된 대회 중 오늘날짜가 대회기간에 포함될 경우 그리드 더블클릭 시 만들어 둔 기록화면 popup 창으로 띄우기
+  - 조회된 대회 중 오늘날짜가 대회기간에 포함되지 않았을 경우 메시지창(해당 대회는 기록을 입력할 수 없습니다. 기록 보기만 가능합니다.?)
+  - main화면에서 기록 버튼 클릭 시 대회의 기록 순위대로 볼 수 있게 만들기
+ 
+<img src="https://raw.githubusercontent.com/kimjihyeon-angela/01_wpf_exerciseapp/main/images/Competition Info.png" width="700" />
+
+<대회 정보 화면>
