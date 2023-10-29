@@ -1,4 +1,7 @@
-﻿using System;
+﻿using ExerciseApp.Logics;
+using MySql.Data.MySqlClient;
+using Org.BouncyCastle.Utilities.Collections;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -28,6 +31,23 @@ namespace ExerciseApp.Views.Competition
         private void btnCheck_Click(object sender, RoutedEventArgs e)
         {
             InfoGrid.Visibility = Visibility.Visible;
+            using (MySqlConnection conn = new MySqlConnection(Commons.myConnString))
+            {
+                var query = @"INSERT INTO competition.makecompetition
+                                        (competitionName,
+                                        competitionStartDate,
+                                        competitionEndDate)
+                            VALUES
+                                        (@competitionName,
+                                        @competitionStartDate,
+                                        @competitionEndDate);";
+                MySqlCommand cmd = new MySqlCommand(query, conn);
+                cmd.Parameters.AddWithValue("competitionName", tbxCompetitionName.Text);
+                cmd.Parameters.AddWithValue("competitionStartDate", StartDate);
+                cmd.Parameters.AddWithValue("competitionEndDate", EndDate);
+
+                cmd.ExecuteNonQuery();
+            }
         }
 
         private void btnCancel_Click(object sender, RoutedEventArgs e)
