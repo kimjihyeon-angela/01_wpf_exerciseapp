@@ -135,3 +135,11 @@ WPF를 활용해서 운동 관련 앱 만들어보기 도전
 <img src="https://raw.githubusercontent.com/kimjihyeon-angela/01_wpf_exerciseapp/main/images/Competition Info.png" width="700" />
 
 <대회 정보 화면>
+
+## 10
+- db 만들기 시작
+- competition 폴더 db만들기
+- competitionMake와 db 연동 시도
+- 문제
+  - datepicker가 시간까지 나오는 문제로 현재 db에 insert 안되고 있음
+  - => 시간 자르고 넣어보기 시도해야함
